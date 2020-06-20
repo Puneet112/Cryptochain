@@ -3,9 +3,6 @@ A blockchain is a growing list of records, called blocks, that are linked using 
 
 For running project
 
-1. Install dependencies
-   npm install
-2. Run redis-server in bash
-   redis-server --daemonize yes
-3. Build and run project
-   npm run dev
+1. Install dependencies (npm install)
+2. Run redis-server in bash (redis-server --daemonize yes)
+3. Build and run project (npm run dev)
