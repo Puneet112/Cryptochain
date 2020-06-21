@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import Transaction from './Transaction';
+import '../index.css';
 
 class Block extends Component
 {
@@ -46,6 +47,7 @@ class Block extends Component
                   variant="info"
                   size="small"
                   onClick={this.toggleTransaction}
+                  className = "ShowLess"
                 >
                   Show Less
                 </Button>
@@ -64,6 +66,7 @@ class Block extends Component
               variant="info"
               size="small"
               onClick={this.toggleTransaction}
+              className = "ShowMore"
             >
               Show More
             </Button>

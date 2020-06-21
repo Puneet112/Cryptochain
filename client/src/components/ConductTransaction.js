@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import history from '../history';
 import Header from "./Header";
 import Footer from "./Footer";
+import '../index.css';
 
 class ConductTransaction extends Component
 {
@@ -90,6 +91,7 @@ class ConductTransaction extends Component
                   size="lg"
                   type="submit"
                   onClick={this.conductTransaction}
+                  className = "Submit"
                 >
                   Submit
                 </Button>

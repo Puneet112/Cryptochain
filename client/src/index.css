@@ -5,7 +5,7 @@
 body
 {
     box-sizing: border-box;
-    background-image: url("./images/blocks_pattern.png");
+    background-image: url("./images/background.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,8 @@ header {
 header h1 {
     display: inline;
     margin-left: 16px;
-    color: white;
+    color: #ff4d4d;
+    text-shadow: 0 0 10px #ff4d4d;
 }
 
 header ul {
@@ -32,7 +33,7 @@ header ul {
 header ul li {
     font-size: 1.25rem;
     list-style: none;
-    color: rgb(235, 88, 88);
+    color: #ff1a1a;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
@@ -42,8 +43,8 @@ header ul li {
 
 header ul li:hover {
     box-sizing: content-box;
-    border-top: 2px solid rgb(235, 88, 88);
-    border-bottom: 2px solid rgb(235, 88, 88);
+    border-top: 2px solid #ff1a1a;
+    border-bottom: 2px solid #ff1a1a;
     transition: 0.5s ease-in-out;
 }
 
@@ -130,4 +131,64 @@ a, a:hover
 {
     word-wrap: break-word;
     text-align: center;
+}
+Button.ShowMore{
+    font-family: "lucida sans unicode";
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 15px 20px;
+    margin: 40px 0;
+    background: #00b8e6;
+}
+Button.ShowMore:hover{
+background: #03e9f4;
+color: #050801;
+box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+Button.ShowLess{
+    font-family: "lucida sans unicode";
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 15px 20px;
+    margin: 40px 0;
+    background: #00b8e6;
+}
+Button.ShowLess:hover{
+background: #03e9f4;
+color: #050801;
+box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+Button.Submit{
+font-family: "lucida sans unicode";
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 2px;
+transition: 0.5s;
+padding: 15px 20px;
+margin: 40px 0;
+background: #00b8e6;
+}
+Button.Submit:hover{
+background: #03e9f4;
+color: #050801;
+box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+Button.MineTransaction{
+    font-family: "lucida sans unicode";
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 15px 20px;
+    margin: 40px 0;
+    background: #00b8e6;
+}
+Button.MineTransaction:hover{
+background: #03e9f4;
+color: #050801;
+box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
 }
