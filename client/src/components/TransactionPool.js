@@ -5,6 +5,7 @@ import Transaction from './Transaction';
 import history from '../history';
 import Header from "./Header";
 import Footer from "./Footer";
+import '../index.css';
 
 const POLL_INTERAL_MS = 5000;
 
@@ -68,6 +69,7 @@ class TransactionPool extends Component
                 variant="primary"
                 size="lg"
                 onClick={this.fetchMineTransactions}
+                className = "MineTransaction"
               >
                 Mine Transactions
               </Button>
