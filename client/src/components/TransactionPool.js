@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Transaction from './Transaction';
 import history from '../history';
 import Header from "./Header";
 import Footer from "./Footer";
-import '../index.css';
 
 const POLL_INTERAL_MS = 5000;
 

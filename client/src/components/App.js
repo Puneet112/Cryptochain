@@ -11,7 +11,9 @@ class App extends Component
             <Header />
             <img className="img-front" src={require("../images/network.jpg")} />
             <div className="container">
-              <h1>Welcome to Cryptocurrency</h1>
+              <h1>
+                <span>Welcome to Cryptocurrency</span>
+              </h1>
               <h4>An innovative payment network and a new kind of money</h4>
               <div>
                 A cryptocurrency (or crypto currency) is a digital asset
@@ -21,7 +23,8 @@ class App extends Component
                 entries, to control the creation of additional digital coin
                 records, and to verify the transfer of coin ownership. It
                 typically does not exist in physical form (like paper money) and
-                is typically not issued by a central authority. <br /><br />
+                is typically not issued by a central authority. <br />
+                <br />
                 Some cryptocurrencies use decentralized control as opposed to
                 centralized digital currency and central banking systems. When a
                 cryptocurrency is minted or created prior to issuance or held on
@@ -29,7 +32,8 @@ class App extends Component
                 When implemented with decentralized control, each cryptocurrency
                 works through distributed ledger technology, typically a
                 blockchain, that serves as a public financial transaction
-                database. <br /><br />
+                database. <br />
+                <br />
               </div>
               <div>
                 <div className="side-content">
@@ -46,7 +50,10 @@ class App extends Component
                     <li>Low processing fees</li>
                   </ul>
                 </div>
-                <img className="side-img" src={require("../images/cryptocurrency.jpg")} />
+                <img
+                  className="side-img"
+                  src={require("../images/cryptocurrency.jpg")}
+                />
               </div>
               <br />
             </div>

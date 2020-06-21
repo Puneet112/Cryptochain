@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import history from '../history';
 import Header from "./Header";
 import Footer from "./Footer";
-import '../index.css';
 
 class ConductTransaction extends Component
 {

@@ -10,6 +10,7 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(220,220,220) !important;
 }
 
 header {
@@ -22,7 +23,7 @@ header h1 {
     display: inline;
     margin-left: 16px;
     color: #ff4d4d;
-    text-shadow: 0 0 10px #ff4d4d;
+    text-shadow: 0 0 5px #ff4d4d;
 }
 
 header ul {
@@ -84,9 +85,32 @@ hr {
 .container h1 {
     padding: 20px;
     margin-top: 32px;
-    color: rgb(235, 88, 88);
     text-align: center;
     margin-bottom: 32px;
+    color: rgb(235, 88, 88);
+    position: relative;
+    overflow: hidden;
+}
+
+.container h1::before {
+    content: "";
+	position: absolute;
+	left: -100%;
+	bottom: 0%;
+	transition: 0.5s ease-in-out;
+	background: rgb(235, 88, 88);
+	height: 3px;
+	width: 100%;
+}
+
+.container h1:hover::before {
+    left: 0%;
+}
+
+.container h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 a, a:hover
@@ -112,7 +136,8 @@ a, a:hover
 .Block
 {
     text-align: center;
-    border: 2px solid rgb(24, 24, 24);
+    border: 1px solid #00b8e6;
+    box-shadow: 5px 5px 10px #03e9f4;
     padding: 5%;
     margin: 2%;
 }
@@ -145,7 +170,7 @@ Button.ShowMore{
 Button.ShowMore:hover{
 background: #03e9f4;
 color: #050801;
-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+box-shadow: 0 0 5px #03e9f4, 0 0 7px #03e9f4, 0 0 10px #03e9f4, 0 0 12px #03e9f4;
 }
 Button.ShowLess{
     font-family: "lucida sans unicode";
@@ -160,7 +185,7 @@ Button.ShowLess{
 Button.ShowLess:hover{
 background: #03e9f4;
 color: #050801;
-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+box-shadow: 0 0 5px #03e9f4, 0 0 7px #03e9f4, 0 0 10px #03e9f4, 0 0 12px #03e9f4;
 }
 Button.Submit{
 font-family: "lucida sans unicode";
@@ -175,7 +200,7 @@ background: #00b8e6;
 Button.Submit:hover{
 background: #03e9f4;
 color: #050801;
-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+box-shadow: 0 0 5px #03e9f4, 0 0 7px #03e9f4, 0 0 10px #03e9f4, 0 0 12px #03e9f4;
 }
 Button.MineTransaction{
     font-family: "lucida sans unicode";
@@ -190,5 +215,5 @@ Button.MineTransaction{
 Button.MineTransaction:hover{
 background: #03e9f4;
 color: #050801;
-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+box-shadow: 0 0 5px #03e9f4, 0 0 7px #03e9f4, 0 0 10px #03e9f4, 0 0 12px #03e9f4;
 }
