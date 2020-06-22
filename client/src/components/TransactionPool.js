@@ -48,7 +48,7 @@ class TransactionPool extends Component
     render()
     {
         return (
-          <div className="position">
+          <div className="position animate-top">
             <Header />
             <div className="container align">
               <h1>Transaction Pool</h1>
@@ -61,7 +61,7 @@ class TransactionPool extends Component
                     </div>
                   )) 
                 ) : (
-                <div className="empty">No Transactions to Mine</div>
+                <div className="empty">No transaction to mine</div>
               ) }
               <Button
                 variant="primary"

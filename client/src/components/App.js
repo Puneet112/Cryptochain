@@ -7,7 +7,7 @@ class App extends Component
     render()
     {
         return (
-          <div className="position">
+          <div className="position animate-left">
             <Header />
             <img className="img-front" src={require("../images/network.jpg")} />
             <div className="container">

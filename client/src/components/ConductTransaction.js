@@ -52,21 +52,29 @@ class ConductTransaction extends Component
     render()
     {
         return (
-          <div className="position">
+          <div className="position animate-top">
             <Header />
             <div className="container align">
-              <h1>Conduct a Transaction</h1>
+              <h1>Conduct Transaction</h1>
               <h4>Known Addresses</h4>
-              {this.state.knownAddresses.map((knownAddress) => {
-                return (
-                  <div key={knownAddress} className="WalletInfo">
-                    <div>{knownAddress}</div>
-                    <br />
-                  </div>
-                );
-              })}
+              {this.state.knownAddresses.length === 0 ? (
+                <div className="no-address">No known address found</div>
+              ) : (
+                this.state.knownAddresses.map((knownAddress) => {
+                  return (
+                    <div key={knownAddress} className="WalletInfo">
+                      <div>{knownAddress}</div>
+                      <br />
+                    </div>
+                  );
+                })
+              )}
               <br />
-              <div style={{"color": "red", "textAlign": "left", "marginBottom": "8px"}}>{this.state.error}</div>
+              <div
+                style={{ color: "red", textAlign: "left", marginBottom: "8px" }}
+              >
+                {this.state.error}
+              </div>
               <FormGroup>
                 <FormControl
                   input="text"
@@ -89,7 +97,7 @@ class ConductTransaction extends Component
                   size="lg"
                   type="submit"
                   onClick={this.conductTransaction}
-                  className = "Submit"
+                  className="Submit"
                 >
                   Submit
                 </Button>

@@ -38,8 +38,8 @@ header ul li {
     padding: 5px;
     margin: 5px;
     cursor: pointer;
-    border-top: 2px solid rgb(24, 24, 24);
-    border-bottom: 2px solid rgb(24, 24, 24);
+    border-top: 2px solid rgb(48, 44, 44);
+    border-bottom: 2px solid rgb(48, 44, 44);
 }   
 
 header ul li:hover {
@@ -52,6 +52,29 @@ header ul li:hover {
 .position {
     position: relative;
     min-height: 100vh;
+}
+
+.animate-left {  
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-top {  
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .img-front {
@@ -90,6 +113,7 @@ hr {
     color: rgb(235, 88, 88);
     position: relative;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 .container h1::before {
@@ -161,6 +185,17 @@ a, a:hover
     word-wrap: break-word;
     text-align: center;
 }
+
+.align strong {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.no-address {
+    text-align: left;
+    font-weight: bold;
+}
+
 Button.ShowMore{
     font-family: "lucida sans unicode";
     text-transform: uppercase;

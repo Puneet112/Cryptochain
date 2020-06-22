@@ -14,7 +14,7 @@ class Wallet extends Component {
   render() {
     const { address, balance } = this.state.walletInfo;
     return (
-      <div className="position">
+      <div className="position animate-top">
         <Header />
         <div className="container">
           <h1>Wallet info</h1>

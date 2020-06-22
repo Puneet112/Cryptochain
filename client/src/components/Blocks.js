@@ -26,7 +26,7 @@ class Blocks extends Component
     render()
     {
         return (
-          <div className="position">
+          <div className="position animate-top">
             <Header />
             <div className="container">
               <h1>Blocks</h1>
