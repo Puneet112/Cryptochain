@@ -14,7 +14,7 @@ body
 }
 
 header {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(48, 44, 44);
     padding: 21px 32px;
     font-family: "McLaren", cursive;
 }
@@ -22,7 +22,7 @@ header {
 header h1 {
     display: inline;
     margin-left: 16px;
-    color: #ff4d4d;
+    color: #fcfcfc;
     text-shadow: 0 0 5px #ff4d4d;
 }
 
@@ -140,6 +140,10 @@ a, a:hover
     box-shadow: 5px 5px 10px #03e9f4;
     padding: 5%;
     margin: 2%;
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .Transaction
